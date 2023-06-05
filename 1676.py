@@ -1,0 +1,11 @@
+from math import factorial
+
+N = int(input())
+cnt = 0
+
+for x in str(factorial(N))[::-1]:
+    
+    if x != '0':
+        break
+    cnt += 1
+print(cnt)
